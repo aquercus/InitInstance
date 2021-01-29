@@ -13,6 +13,7 @@ docker ps
 docker pull postgres
 docker images
 docker run --name pg -e  POSTGRES_PASSWORD=aquercus -p 5432:5432 -d postgres
+sleep 30
 docker logs pg
 
 docker ps -a
